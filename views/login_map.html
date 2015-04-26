@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="import" href="/header"/>
+<body>
+<script src="browser_detect/browser_detect.js" type="text/javascript"></script>
+<script src="webcomponents/webcomponents.min.js" type="text/javascript"></script>
+
+<div class="bg-images">
+    <div style="background-image: url(&quot;https://mapsconnect.apple.com/assets/images/flyover/006_pw.jpg&quot;); opacity: 0;" class="bottom bg"></div>
+    <div style="background-image: url(&quot;https://mapsconnect.apple.com/assets/images/flyover/007_cls.jpg&quot;); opacity: 1;" class="top bg"></div>
+    <img class="initial-bg-img" src="images/login_maps_bg.jpg" style="display: none;">
+
+    <div class="bg screen"></div>
+</div>
+
+<div class="wrapper">
+    <div class="content-wrapper">
+        <div class="navbar navbar-top">
+            <div class="nav navbar-left" role="img" aria-label="Maps Connect">
+                <span class="maps-title"></span> <span class="navbar-left-title">Connect</span>
+            </div>
+            <div class="nav navbar-right">
+
+            </div>
+        </div>
+
+        <div class="login-panel">
+            <div class="title-mapsconnect landing-image">
+
+            </div>
+            <div class="indoor-login">
+
+                <form action="/login" method="POST" class="form login-form" autocomplete="on">
+                    <input name="csrfToken" value="12082431f2990e821f57bf099af7af753e71ff14-1423311304336-a316e8da3ee518bc1d940158" type="hidden">
+
+                    <div class="form-group clearfix ">
+                        <div class="input-widget">
+                            <input id="login" name="login" placeholder="Apple ID" autocapitalize="off" autocorrect="off" aria-label="Apple ID" maxlength="5096" spellcheck="false" type="text">
+                            <span class="help-inline"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group clearfix ">
+                        <div class="input-widget">
+                            <input id="password" name="password" aria-label="Password" placeholder="Password" klass="password" maxlength="5096" autocomplete="on" autocorrect="off" autocapitalize="off" spellcheck="false" type="password">
+                            <div class="right-button password-button"></div>
+                        </div>
+                    </div>
+                    <div class="hidden">
+                        <input name="hash" type="text">
+                        <input value="Submit" type="submit">
+                    </div>
+                </form>
+
+            </div>
+            <div class="login-subtext text-center">
+                <span>Don't have a free Apple ID?</span>
+                <a href="https://mapsconnect.apple.com/getappleid" target="_blank">Create one</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer-wrapper">
+    <div class="footer">
+        <div class="nav navbar-left">
+            <div class="footer-label bg-0-footer-label hidden">
+                <span class="left-label">Flyover of Golden Gate Bridge</span>
+                <span class="right-label">, San Francisco</span>
+            </div>
+            <div class="footer-label bg-1-footer-label hidden">
+                <span class="left-label">Flyover of Central Park</span>
+                <span class="right-label">, New York City</span>
+            </div>
+            <div class="footer-label bg-2-footer-label hidden">
+                <span class="left-label">Flyover of Stonehenge</span>
+                <span class="right-label">, Amesbury</span>
+            </div>
+            <div class="footer-label bg-3-footer-label">
+                <span class="left-label">Flyover of Palace of Westminster</span>
+                <span class="right-label">, London</span>
+            </div>
+            <div class="footer-label bg-4-footer-label hidden">
+                <span class="left-label">Flyover of Colosseum</span>
+                <span class="right-label">, Rome</span>
+            </div>
+            <div class="footer-label bg-5-footer-label hidden">
+                <span class="left-label">Flyover of Sydney Harbour Bridge</span>
+                <span class="right-label">, Sydney</span>
+            </div>
+        </div>
+
+        <div class="nav navbar-right">
+            <span class="copyright">Copyright © 2014 Apple Inc. All rights reserved.</span>
+            <span class="footer-link-separator"></span>
+            <span><a href="https://mapsconnect.apple.com/iforgot" target="blank">Forgot ID or Password?</a></span>
+        </div>
+    </div>
+</div>
+<script src="jquery/js/jquery.js" type="text/javascript"></script>
+<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/login_map.js" type="text/javascript"></script>
+
+</body>
+</html>

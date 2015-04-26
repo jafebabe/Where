@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+    <title>Where</title>
+
+    <script>
+        (function(doc) {
+            var viewport = document.getElementById("viewport");
+            var content = "width=device-width, ";
+            if(/Android.*Mobile/i.test(navigator.userAgent) || /webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+              viewport.setAttribute("content", content + "initial-scale=1.0");
+            } else if (/iPad|Android/i.test(navigator.userAgent)) {
+              function orientationScale() {
+                if (window.orientation === 0 || window.orientation === 180) {
+                  viewport.setAttribute("content", content + "initial-scale=0.85");
+                } else {
+                  viewport.setAttribute("content", content + "initial-scale=1.0");
+                }
+              }
+              orientationScale();
+              // Listen for orientation changes
+              window.addEventListener("orientationchange", function() {
+                orientationScale();
+              }, false);
+            }
+          }(document));
+  </script>
+
+<link rel="stylesheet" href="css/login_map.css">

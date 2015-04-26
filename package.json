@@ -1,0 +1,19 @@
+{
+  "name": "Where",
+  "version": "0.0.1",
+  "description": "A gis interactive application ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "gis",
+    "where"
+  ],
+  "author": "bjj",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^1.0.0",
+    "express": "^4.10.2"
+  }
+}
